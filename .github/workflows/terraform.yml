@@ -34,7 +34,7 @@ jobs:
     - name: configure aws credentials
       uses: aws-actions/configure-aws-credentials@v4
       with:
-        role-to-assume: arn:aws:iam::067054661388:role/terraform-github-role
+        role-to-assume: arn:aws:iam::928326215142:role/terraform-github
         aws-region: ${{ env.AWS_REGION }}
         role-session-name: GitHub-OIDC-TERRAFORM
 
