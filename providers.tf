@@ -7,7 +7,7 @@ terraform {
   }
   required_version = "~>1.6.0"
   backend "s3" {
-    bucket         = "terraform-bucket-582316382845"
+    bucket         = "terraform-bucketja"
     key            = "ccaws-raildev-timsdev/terraform.tfstate"
     dynamodb_table = "terraform-table-582316382845"
     region         = "us-east-1"
