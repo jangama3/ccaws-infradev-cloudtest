@@ -21,7 +21,6 @@
 
 resource "aws_instance" "ec2-app" {
   ami           = local.ec2-app.ami
-  key_name      = local.ec2-app.key_name
   instance_type = local.ec2-app.inst_type
   subnet_id     = module.vpc.private_subnets[0]
   vpc_security_group_ids = [
