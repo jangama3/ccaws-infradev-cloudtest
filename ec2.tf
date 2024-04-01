@@ -30,7 +30,6 @@ resource "aws_instance" "ec2-app" {
     delete_on_termination = local.ec2-app.root_device.delete_on_termination
     encrypted             = local.ec2-app.root_device.encrypted
     iops                  = local.ec2-app.root_device.iops
-    kms_key_id            = data.aws_kms_alias.ec2.target_key_arn
     throughput            = local.ec2-app.root_device.throughput
     volume_size           = local.ec2-app.root_device.volume_size
     volume_type           = local.ec2-app.root_device.volume_type
