@@ -9,7 +9,7 @@ terraform {
   backend "s3" {
     bucket         = "terraform-bucketja"
     key            = "ccaws-raildev-timsdev/terraform.tfstate"
-    dynamodb_table = "terraform-table-582316382845"
+    dynamodb_table = "terraform-table"
     region         = "us-east-1"
   }
 }
