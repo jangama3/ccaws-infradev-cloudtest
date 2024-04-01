@@ -17,16 +17,6 @@ module "vpc" {
   tags = local.tags
 }
 
-resource "aws_flow_log" "flowlogs_cw" {
-  iam_role_arn         = aws_iam_role.vpc_flow_logs_role.arn
-  #log_destination      = aws_cloudwatch_log_group.vpc.arn
-  #log_destination_type = "cloud-watch-logs"
-  traffic_type         = "ALL"
-  vpc_id               = module.vpc.vpc_id
-
-  tags = merge({ Name = "${local.vpc_name}-flowlogs-to-cw" }, local.tags)
-}
-
 # resource "aws_eip" "one" {
 #   domain = "vpc"
 #   tags   = merge({ Name = "${var.project}-${var.region}a" }, local.tags)
