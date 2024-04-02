@@ -40,7 +40,7 @@ output "database_subnet_id" {
 # output "onprem_sg" {
 #   value = aws_security_group.onprem.id
 # }
-output "awsvatims01d" {
+output "awsvatims02d" {
   value = aws_instance.ec2-app.id
 }
 # output "awsvahelpdb01p" {

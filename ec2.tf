@@ -35,6 +35,6 @@ resource "aws_instance" "ec2-app" {
     volume_type           = local.ec2-app.root_device.volume_type
     tags                  = merge({ Name = local.ec2-app.name, DeployedBy = local.ec2-app.DeployedBy }, local.tags)
   }
-  tags = merge({ Name = local.ec2-appa.name, DeployedBy = local.ec2-app.DeployedBy }, local.tags)
+  tags = merge({ Name = local.ec2-app.name, DeployedBy = local.ec2-app.DeployedBy }, local.tags)
 }
 
