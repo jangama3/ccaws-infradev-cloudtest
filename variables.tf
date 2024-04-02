@@ -101,7 +101,7 @@ locals {
     ami        = "ami-05c13eab67c5d8861" # Amazon Linux 2023 AMI 2023.2.20231030.1 x86_64 HVM kernel-6.1
     key_name   = "tims-dev"
     inst_type  = "t3.micro"
-    DeployedBy = "Raghu Tirumalasetty"
+    DeployedBy = "jonathan ang"
     root_device = {
       delete_on_termination = true
       encrypted             = true
@@ -112,7 +112,7 @@ locals {
     }
   }
   ec2-app = {
-    name       = "awsvatims01d"
+    name       = "awsvatims02d"
     ami        = "ami-0fe630eb857a6ec83" #RHEL 9 Provided by Red Hat, Inc
     key_name   = "tims-dev"
     inst_type  = "t3.medium"
