@@ -41,7 +41,7 @@ output "database_subnet_id" {
 #   value = aws_security_group.onprem.id
 # }
 output "awsvatims01d" {
-  value = aws_instance.ec2-appa.id
+  value = aws_instance.ec2-app.id
 }
 # output "awsvahelpdb01p" {
 #   value = aws_instance.ec2-app.id
